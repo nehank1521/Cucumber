@@ -57,7 +57,7 @@ WebDriver driver;
 	@When("^taking snapshot$")
 	public void taking_snapshot() throws Throwable {
 		File screenshotfile= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotfile, new File("", "")); 
+		FileUtils.copyFile(screenshotfile, new File("C:\\Users\\Neha Kushwaha\\Desktop\\neha\\page1..png")); 
 	}
 
 	@When("^Click on next$")
