@@ -57,18 +57,18 @@ WebDriver driver;
 	@When("^taking snapshot$")
 	public void taking_snapshot() throws Throwable {
 		File screenshotfile= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotfile, new File("C:\\Users\\Neha Kushwaha\\Desktop\\neha\\page1..png")); 
+		FileUtils.copyFile(screenshotfile, new File("C:\\Users\\Neha Kushwaha\\Desktop\\neha\\page1.png")); 
 	}
 
 	@When("^Click on next$")
 	public void click_on_next() throws Throwable
 	{
-		WebElement page =driver.findElement(By.xpath("//span[@class='page-numbers next']"));
-		page.click();
+		//WebElement page =driver.findElement(By.xpath("//span[@class='page-numbers next']"));
+		//page.click();
 	}
 
-	@When("^Taking snap shots up to (\\d+) pages$")
-	public void taking_snap_shots_up_to_pages(int arg1) throws Throwable 
+	@When("^Taking snap shots up to five pages$")
+	public void taking_snap_shots_up_to_pages_five_pages() throws Throwable 
 	{
 		for (int i =0; i<4; i++)
 			{
