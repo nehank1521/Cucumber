@@ -1,6 +1,6 @@
 
 @tag
-Feature: Take snapshots up to 5Fivepages
+Feature: Take snapshots up to Fivepages
 	I want to use this template for my feature file
 @tag1
 Scenario: Title of your scenario
@@ -11,7 +11,7 @@ When Login page should open
 	And Getting text
 	And taking snapshot 
 	And Click on next
-	And Taking snap shots up to 5 pages
+	And Taking snap shots up to five pages
 Then Logout
 	And Close the browser
 
