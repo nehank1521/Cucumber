@@ -70,6 +70,8 @@ WebDriver driver;
 	@When("^Taking snap shots up to (\\d+) pages$")
 	public void taking_snap_shots_up_to_pages(int arg1) throws Throwable 
 	{
+		for (int i =0; i<4; i++)
+			{
 		WebElement page =driver.findElement(By.xpath("//span[@class='page-numbers next']"));
 		page.click();
 		Random rand = new Random();
